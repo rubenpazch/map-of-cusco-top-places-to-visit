@@ -17,10 +17,6 @@ article {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-auto-rows: minmax(60px, auto);
-  grid-auto-columns: minmax(220px, auto);
-  gap: 5px;
-  padding: 0 50px 0 50px;
 }
 
 .map-bg {
@@ -36,4 +32,77 @@ article {
   border-style: dashed;
   border-width: 1px;
   width: 100%;
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.logo-annuncement {
+  background-color: burlywood;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.title-annuncement {
+  background-color: crimson;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.content-annuncement {
+  background-color: cyan;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.home-address {
+  background-color: darkgoldenrod;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.mail-address {
+  background-color: darkorchid;  
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.phone-number {
+  background-color: darkred;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.qr-annuncement {
+  background-color: darkseagreen;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.logo-annuncement img {
+  width: 90px;
+  height: 50px;
+}
+
+.title-annuncement {
+  font-size: 11px;
+}
+
+.qr-annuncement img {
+  width: 80px;
+  height: 80px;
 }
